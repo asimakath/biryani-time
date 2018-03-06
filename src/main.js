@@ -10,6 +10,7 @@ import moment from 'moment'
 
 Vue.use(VueFire)
 Vue.use(Vuetify)
+Vue.use(require('vue-moment'))
 
 Vue.config.productionTip = false
 

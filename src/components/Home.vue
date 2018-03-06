@@ -4,18 +4,10 @@
       <v-layout column align-center>
         <div>
           <article v-for="(biryaniDay, idx) in biryaniDays" :key="idx">
-            <h1>{{ biryaniDay.date }}</h1>
-            <p>Created by {{biryaniDay.createdBy}} on {{biryaniDay.createdAt}}</p>
+            <h1>{{ biryaniDay.date | moment("ll")}}</h1>
+            <p>Created by {{biryaniDay.createdBy}} {{biryaniDay.createdAt | moment("from")}}</p>
           </article>
         </div>
-        <blockquote>
-          &#8220;First, eat your Biryani. Then solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;Unknown Author</em>
-            </small>
-          </footer>
-        </blockquote>
       </v-layout>
     </v-slide-y-transition>
   </v-container>

@@ -7,6 +7,11 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import VueFire from 'vuefire'
 import moment from 'moment'
+import firebase from 'firebase'
+import * as firebaseui from 'firebaseui'
+
+const ui = new firebaseui.auth.AuthUI(firebase.auth())
+ui.foo = 3
 
 Vue.use(VueFire)
 Vue.use(Vuetify)
